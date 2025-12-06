@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  padding: 10px;
+}
+
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+#site-title {
+  font-size: 1.8rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;        
+  gap: 10px;
+}
+
+nav ul.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  background: #333;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+nav ul.menu li a:hover {
+  background: #555;
+}
+
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+table th {
+  background: #eee;
+}
+
+
+@media (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+
+.site-footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 20px;
+}
